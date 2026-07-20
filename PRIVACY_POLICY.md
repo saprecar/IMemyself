@@ -20,7 +20,7 @@ The developer reserves the ultimate right to:
 * Introduce paid subscriptions, features behind paywalls, or advertisements in the future.
 
 ## 4. Jurisdiction & Legal Disputes
-This application is governed by the laws of India. Any legal dispute, claim, or controversy shall be strictly settled through binding arbitration in **Naranpura, Ahmedabad, Gujarat, India**.
+This application is governed by the laws of India. Any legal dispute, claim, or controversy shall be strictly settled through binding arbitration in **Narmadapuram, Madhya Pradesh, India**.
 * You explicitly waive the right to participate in a class action lawsuit or class-wide arbitration.
 * You agree that the developer holds **no liabilities** whatsoever in any dispute.
 
