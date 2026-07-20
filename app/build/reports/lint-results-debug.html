@@ -177,9 +177,9 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 15 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 29 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Tue Jul 21 00:33:03 IST 2026 by AGP (8.2.0)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Tue Jul 21 00:38:17 IST 2026 by AGP (8.2.0)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -190,7 +190,8 @@ document.getElementById(id).style.display = 'none';
       <a class="mdl-navigation__link" href="#OldTargetApi"><i class="material-icons warning-icon">warning</i>Target SDK attribute is not targeting latest version (1)</a>
       <a class="mdl-navigation__link" href="#RedundantLabel"><i class="material-icons warning-icon">warning</i>Redundant label on activity (1)</a>
       <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (11)</a>
-      <a class="mdl-navigation__link" href="#MissingApplicationIcon"><i class="material-icons warning-icon">warning</i>Missing application icon (1)</a>
+      <a class="mdl-navigation__link" href="#IconLauncherShape"><i class="material-icons warning-icon">warning</i>The launcher icon shape should use a distinct silhouette (10)</a>
+      <a class="mdl-navigation__link" href="#IconDuplicates"><i class="material-icons warning-icon">warning</i>Duplicated icons under different names (5)</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -222,8 +223,11 @@ document.getElementById(id).style.display = 'none';
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
 </td></tr>
 <tr>
-<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#MissingApplicationIcon">MissingApplicationIcon</a>: Missing application icon</td></tr>
+<td class="countColumn">10</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#IconLauncherShape">IconLauncherShape</a>: The launcher icon shape should use a distinct silhouette</td></tr>
+<tr>
+<td class="countColumn">5</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#IconDuplicates">IconDuplicates</a>: Duplicated icons under different names</td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (37)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (39)</a>
@@ -361,14 +365,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:16</span>: <span class="message">Redundant label can be removed</span><br /><pre class="errorlines">
-<span class="lineno"> 13 </span>        <span class="tag">&lt;activity</span><span class="attribute">
-</span><span class="lineno"> 14 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">".MainActivity"</span>
-<span class="lineno"> 15 </span>            <span class="prefix">android:</span><span class="attribute">exported</span>=<span class="value">"true"</span>
-<span class="caretline"><span class="lineno"> 16 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">label</span>=<span class="value">"@string/app_name"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 17 </span>            <span class="prefix">android:</span><span class="attribute">theme</span>=<span class="value">"@style/Theme.IMyself"</span>>
-<span class="lineno"> 18 </span>            <span class="tag">&lt;intent-filter></span>
-<span class="lineno"> 19 </span>                <span class="tag">&lt;action</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.intent.action.MAIN"</span> />
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:18</span>: <span class="message">Redundant label can be removed</span><br /><pre class="errorlines">
+<span class="lineno"> 15 </span>        <span class="tag">&lt;activity</span><span class="attribute">
+</span><span class="lineno"> 16 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">".MainActivity"</span>
+<span class="lineno"> 17 </span>            <span class="prefix">android:</span><span class="attribute">exported</span>=<span class="value">"true"</span>
+<span class="caretline"><span class="lineno"> 18 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">label</span>=<span class="value">"@string/app_name"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 19 </span>            <span class="prefix">android:</span><span class="attribute">theme</span>=<span class="value">"@style/Theme.IMyself"</span>>
+<span class="lineno"> 20 </span>            <span class="tag">&lt;intent-filter></span>
+<span class="lineno"> 21 </span>                <span class="tag">&lt;action</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.intent.action.MAIN"</span> />
 </pre>
 
 </div>
@@ -544,35 +548,39 @@ Dismiss</button>            </div>
             </div>
           </section>
 <a name="Usability:Icons"></a>
-<a name="MissingApplicationIcon"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="MissingApplicationIconCard" style="display: block;">
+<a name="IconLauncherShape"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="IconLauncherShapeCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Missing application icon</h2>
+    <h2 class="mdl-card__title-text">The launcher icon shape should use a distinct silhouette</h2>
   </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:5</span>: <span class="message">Should explicitly set <code>android:icon</code>, there is no default</span><br /><pre class="errorlines">
-<span class="lineno">  2 </span><span class="tag">&lt;manifest</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>
-<span class="lineno">  3 </span>    <span class="prefix">xmlns:</span><span class="attribute">tools</span>=<span class="value">"http://schemas.android.com/tools"</span>>
-<span class="lineno">  4 </span>
-<span class="caretline"><span class="lineno">  5 </span>    <span class="tag">&lt;</span><span class="warning"><span class="tag">application</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
-</span><span class="lineno">  6 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">allowBackup</span>=<span class="value">"true"</span>
-<span class="lineno">  7 </span>        <span class="prefix">android:</span><span class="attribute">dataExtractionRules</span>=<span class="value">"@xml/data_extraction_rules"</span>
-<span class="lineno">  8 </span>        <span class="prefix">android:</span><span class="attribute">fullBackupContent</span>=<span class="value">"@xml/backup_rules"</span></pre>
-
+<span class="location"><a href="../../src/main/res/mipmap-hdpi/ic_launcher.png">../../src/main/res/mipmap-hdpi/ic_launcher.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-hdpi/ic_launcher.png" /><span class="message">Launcher icons should not fill every pixel of their square region; see the design guide for details</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_launcher.png">../../src/main/res/mipmap-mdpi/ic_launcher.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/ic_launcher.png" /><span class="message">Launcher icons should not fill every pixel of their square region; see the design guide for details</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-xhdpi/ic_launcher.png">../../src/main/res/mipmap-xhdpi/ic_launcher.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-xhdpi/ic_launcher.png" /><span class="message">Launcher icons should not fill every pixel of their square region; see the design guide for details</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher.png">../../src/main/res/mipmap-xxhdpi/ic_launcher.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-xxhdpi/ic_launcher.png" /><span class="message">Launcher icons should not fill every pixel of their square region; see the design guide for details</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png">../../src/main/res/mipmap-xxxhdpi/ic_launcher.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png" /><span class="message">Launcher icons should not fill every pixel of their square region; see the design guide for details</span><br clear="right"/>
+<button class="mdl-button mdl-js-button mdl-button--primary" id="IconLauncherShapeDivLink" onclick="reveal('IconLauncherShapeDiv');" />+ 5 More Occurrences...</button>
+<div id="IconLauncherShapeDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/mipmap-hdpi/ic_launcher_round.png">../../src/main/res/mipmap-hdpi/ic_launcher_round.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-hdpi/ic_launcher_round.png" /><span class="message">Launcher icon used as round icon did not have a circular shape</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_launcher_round.png">../../src/main/res/mipmap-mdpi/ic_launcher_round.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/ic_launcher_round.png" /><span class="message">Launcher icon used as round icon did not have a circular shape</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xhdpi/ic_launcher_round.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png" /><span class="message">Launcher icon used as round icon did not have a circular shape</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png" /><span class="message">Launcher icon used as round icon did not have a circular shape</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" /><span class="message">Launcher icon used as round icon did not have a circular shape</span><br clear="right"/>
 </div>
-<div class="metadata"><div class="explanation" id="explanationMissingApplicationIcon" style="display: none;">
-You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example <code>@drawable/icon</code>).<br/><div class="moreinfo">More info: <a href="https://developer.android.com/studio/publish/preparing#publishing-configure">https://developer.android.com/studio/publish/preparing#publishing-configure</a>
-</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
-To suppress this error, use the issue id "MissingApplicationIcon" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<div class="metadata"><div class="explanation" id="explanationIconLauncherShape" style="display: none;">
+According to the Android Design Guide (<a href="https://d.android.com/r/studio-ui/designer/material/iconography">https://d.android.com/r/studio-ui/designer/material/iconography</a>) your launcher icons should "use a distinct silhouette", a "three-dimensional, front view, with a slight perspective as if viewed from above, so that users perceive some depth."<br/>
+<br/>
+The unique silhouette implies that your launcher icon should not be a filled square.<br/>To suppress this error, use the issue id "IconLauncherShape" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
 <br/></div>
 </div>
 </div>
 <div class="chips">
 <span class="mdl-chip">
-    <span class="mdl-chip__text">MissingApplicationIcon</span>
+    <span class="mdl-chip__text">IconLauncherShape</span>
 </span>
 <span class="mdl-chip">
     <span class="mdl-chip__text">Icons</span>
@@ -584,13 +592,111 @@ To suppress this error, use the issue id "MissingApplicationIcon" as explained i
     <span class="mdl-chip__text">Warning</span>
 </span>
 <span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 5/10</span>
+    <span class="mdl-chip__text">Priority 6/10</span>
 </span>
 </div>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationMissingApplicationIconLink" onclick="reveal('explanationMissingApplicationIcon');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="MissingApplicationIconCardLink" onclick="hideid('MissingApplicationIconCard');">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconLauncherShapeLink" onclick="reveal('explanationIconLauncherShape');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="IconLauncherShapeCardLink" onclick="hideid('IconLauncherShapeCard');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="IconDuplicates"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="IconDuplicatesCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Duplicated icons under different names</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/mipmap-hdpi/ic_launcher_round.png">../../src/main/res/mipmap-hdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 1 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/mipmap-hdpi/ic_launcher.png">../../src/main/res/mipmap-hdpi/ic_launcher.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../../src/main/res/mipmap-hdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-hdpi/ic_launcher.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-hdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-hdpi/ic_launcher_round.png" /></a>
+</td></tr><tr><th></th><th></th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_launcher_round.png">../../src/main/res/mipmap-mdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
+<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 1 Additional Locations...</button>
+<div id="Location2Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_launcher.png">../../src/main/res/mipmap-mdpi/ic_launcher.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../../src/main/res/mipmap-mdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-mdpi/ic_launcher.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-mdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-mdpi/ic_launcher_round.png" /></a>
+</td></tr><tr><th></th><th></th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xhdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
+<ul></ul><button id="Location3DivLink" onclick="reveal('Location3Div');" />+ 1 Additional Locations...</button>
+<div id="Location3Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/mipmap-xhdpi/ic_launcher.png">../../src/main/res/mipmap-xhdpi/ic_launcher.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../../src/main/res/mipmap-xhdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-xhdpi/ic_launcher.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png" /></a>
+</td></tr><tr><th></th><th></th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
+<ul></ul><button id="Location4DivLink" onclick="reveal('Location4Div');" />+ 1 Additional Locations...</button>
+<div id="Location4Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher.png">../../src/main/res/mipmap-xxhdpi/ic_launcher.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxhdpi/ic_launcher.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png" /></a>
+</td></tr><tr><th></th><th></th></tr>
+</table>
+<span class="location"><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
+<ul></ul><button id="Location5DivLink" onclick="reveal('Location5Div');" />+ 1 Additional Locations...</button>
+<div id="Location5Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png">../../src/main/res/mipmap-xxxhdpi/ic_launcher.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" /></a>
+</td></tr><tr><th></th><th></th></tr>
+</table>
+</div>
+<div class="metadata"><div class="explanation" id="explanationIconDuplicates" style="display: none;">
+If an icon is repeated under different names, you can consolidate and just use one of the icons and delete the others to make your application smaller. However, duplicated icons usually are not intentional and can sometimes point to icons that were accidentally overwritten or accidentally not updated.<br/>To suppress this error, use the issue id "IconDuplicates" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">IconDuplicates</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Icons</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 3/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconDuplicatesLink" onclick="reveal('explanationIconDuplicates');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="IconDuplicatesCardLink" onclick="hideid('IconDuplicatesCard');">
 Dismiss</button>            </div>
             </div>
           </section>

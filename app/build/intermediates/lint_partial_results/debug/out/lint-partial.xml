@@ -42,7 +42,7 @@
     <map id="UnusedResources">
         <entry
             name="model"
-            string="string[app_name(U)],style[Theme_IMyself(U)],xml[data_extraction_rules(U),backup_rules(U)];;;;"/>
+            string="mipmap[ic_launcher_round(U),ic_launcher(U)],string[app_name(U)],style[Theme_IMyself(U)],xml[data_extraction_rules(U),backup_rules(U)];;;;"/>
     </map>
 
 </incidents>
