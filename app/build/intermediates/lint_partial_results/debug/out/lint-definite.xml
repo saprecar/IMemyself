@@ -193,4 +193,42 @@
             endOffset="2115"/>
     </incident>
 
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.play:review than 2.0.1 is available: 2.0.2">
+        <fix-replace
+            description="Change to 2.0.2"
+            family="Update versions"
+            oldString="2.0.1"
+            replacement="2.0.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="72"
+            column="21"
+            startOffset="2138"
+            endLine="72"
+            endColumn="57"
+            endOffset="2174"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.play:review-ktx than 2.0.1 is available: 2.0.2">
+        <fix-replace
+            description="Change to 2.0.2"
+            family="Update versions"
+            oldString="2.0.1"
+            replacement="2.0.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="73"
+            column="21"
+            startOffset="2197"
+            endLine="73"
+            endColumn="61"
+            endOffset="2237"/>
+    </incident>
+
 </incidents>

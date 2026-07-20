@@ -29,9 +29,30 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
         val sharedPrefs = getSharedPreferences("theme_prefs", Context.MODE_PRIVATE)
+        val disclaimerPrefs = getSharedPreferences("disclaimer_prefs", Context.MODE_PRIVATE)
         
+        val currentVersionCode = try {
+            packageManager.getPackageInfo(packageName, 0).let {
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+                    it.longVersionCode
+                } else {
+                    @Suppress("DEPRECATION")
+                    it.versionCode.toLong()
+                }
+            }
+        } catch (e: Exception) {
+            1L
+        }
+
+        val lastAcceptedVersion = disclaimerPrefs.getLong("last_accepted_version", 0L)
+        val lastAcceptedTime = disclaimerPrefs.getLong("last_accepted_time", 0L)
+        val thirtyDaysMillis = 30L * 24L * 60L * 60L * 1000L
+        
+        val needsDisclaimer = (currentVersionCode != lastAcceptedVersion) || 
+                              (System.currentTimeMillis() - lastAcceptedTime > thirtyDaysMillis)
+        
+        val initialDestination = if (needsDisclaimer) "disclaimer" else "calendar"
         setContent {
             val systemTheme = isSystemInDarkTheme()
             var isDarkTheme by remember {
@@ -50,9 +71,13 @@ class MainActivity : ComponentActivity() {
                 ) {
                     val navController = rememberNavController()
 
-                    NavHost(navController = navController, startDestination = "disclaimer") {
+                    NavHost(navController = navController, startDestination = initialDestination) {
                         composable("disclaimer") {
                             DisclaimerScreen(onAccept = {
+                                disclaimerPrefs.edit()
+                                    .putLong("last_accepted_version", currentVersionCode)
+                                    .putLong("last_accepted_time", System.currentTimeMillis())
+                                    .apply()
                                 navController.navigate("calendar") {
                                     popUpTo("disclaimer") { inclusive = true }
                                 }

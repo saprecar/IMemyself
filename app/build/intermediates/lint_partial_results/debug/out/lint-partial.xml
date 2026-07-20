@@ -18,6 +18,14 @@
                             endLine="25"
                             endColumn="64"
                             endOffset="900"/>
+                        <location id="1"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/spacecar/imyself/ui/DisclaimerScreen.kt"
+                            line="26"
+                            column="22"
+                            startOffset="915"
+                            endLine="26"
+                            endColumn="64"
+                            endOffset="957"/>
                     </map>
                     <map id="android.intent.action.SENDTO (used to start an activity)">
                         <location id="0"

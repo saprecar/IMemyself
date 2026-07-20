@@ -4,6 +4,11 @@ ADDED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml:2:1-25:12
 INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml:2:1-25:12
 INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml:2:1-25:12
 INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.android.play:review-ktx:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c1d4dd5d8c3298d2a8a4b733ce26b74e\transformed\review-ktx-2.0.1\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.play:review:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9edf875dc47bb159eab13eabf7634862\transformed\review-2.0.1\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\cbd6d88549c670e176c3b820e9b9f571\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\7cf625da3026e146b477c514f4e74115\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.7.6] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6e6834c18dd34ab717b66bf9668343b1\transformed\navigation-common-2.7.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.6] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\87471bfe76de2f6710b27586fa0c12b4\transformed\navigation-runtime-2.7.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\461d1f51e0e28bcf233fc4abc2a596dc\transformed\navigation-common-ktx-2.7.6\AndroidManifest.xml:2:1-7:12
@@ -13,6 +18,7 @@ MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\amanm\.gradle\
 MERGED from [androidx.activity:activity:1.8.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\745dedaf47f474378311991a10e49779\transformed\activity-1.8.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\536abc7b2a1a2430c940cf95c85ea85e\transformed\activity-ktx-1.8.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5f1a683cedb8ab2ba9cbb570f3f3e8ad\transformed\activity-compose-1.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\bc0a469913d0e2d4df80f9c59b9835dd\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.animation:animation-core-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d7f8592d71d071d366408275ba0a31e4\transformed\animation-core-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5569690c36a7690eff357bd24e05730b\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-extended-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\f40a42053a9ccd9d9715a535f6e500b6\transformed\material-icons-extended-release\AndroidManifest.xml:2:1-7:12
@@ -28,6 +34,8 @@ MERGED from [androidx.compose.ui:ui-graphics-android:1.6.0] C:\Users\amanm\.grad
 MERGED from [androidx.compose.ui:ui-text-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a2727858fbf76692078d44fe0ce8b37c\transformed\ui-text-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e2fcef519b7b4b00ec8acfb51e0e07cf\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0803db9f27584a6be0a3452fb708e2d5\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9d18cfd7993c6bfdf278e82cbacf07f3\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\3a9c3a258f867730f9fa43cfa53e78ae\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0c831fc9f86777e8ca88eb6c421f82d2\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\69bde3d28680600a3c29804e2f79d2af\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0688b9a2316a312247be28450afb306b\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
@@ -38,7 +46,9 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\amanm\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5fbee9b3946ceaff7818b3c1903a4d91\transformed\lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5120e3952eff6eaa7e244f8db966208c\transformed\lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6db19bf30fa4d71a41207de06651a22f\transformed\ui-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d688e2d61b318a8e01d3cda626ba39b5\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\3ab22d6ea834d2a6a2155b6ff166b154\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\56f59dd9b74e31e05c88b8c27b5d28fb\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.12.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\803bc7eadea8e3fda123543a7addf7f7\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1e99f6a74c907311893263c0a28ccaf7\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\df2f2b5cd118cd6b59a6b09bdb91b0fb\transformed\core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
@@ -55,6 +65,7 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\amanm\.gradle\ca
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c7606fea2f960d81c3c7858461c9c43a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1f3aca8e2d06679d70ed792c66032266\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\defc160bd19827f3b7a8d234c063b11d\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:2:1-21:12
 	package
 		INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -68,6 +79,14 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\amanm\.gradle\caches\9.0-m
 application
 ADDED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml:5:5-23:19
 INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml:5:5-23:19
+MERGED from [com.google.android.play:review-ktx:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c1d4dd5d8c3298d2a8a4b733ce26b74e\transformed\review-ktx-2.0.1\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.play:review-ktx:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c1d4dd5d8c3298d2a8a4b733ce26b74e\transformed\review-ktx-2.0.1\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.play:review:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9edf875dc47bb159eab13eabf7634862\transformed\review-2.0.1\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.play:review:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9edf875dc47bb159eab13eabf7634862\transformed\review-2.0.1\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\cbd6d88549c670e176c3b820e9b9f571\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\cbd6d88549c670e176c3b820e9b9f571\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e2fcef519b7b4b00ec8acfb51e0e07cf\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e2fcef519b7b4b00ec8acfb51e0e07cf\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0803db9f27584a6be0a3452fb708e2d5\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
@@ -82,6 +101,8 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\amanm\.g
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c7606fea2f960d81c3c7858461c9c43a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1f3aca8e2d06679d70ed792c66032266\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1f3aca8e2d06679d70ed792c66032266\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
 		INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
@@ -124,6 +145,16 @@ uses-sdk
 INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml
 INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.play:review-ktx:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c1d4dd5d8c3298d2a8a4b733ce26b74e\transformed\review-ktx-2.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:review-ktx:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c1d4dd5d8c3298d2a8a4b733ce26b74e\transformed\review-ktx-2.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:review:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9edf875dc47bb159eab13eabf7634862\transformed\review-2.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:review:2.0.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9edf875dc47bb159eab13eabf7634862\transformed\review-2.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\cbd6d88549c670e176c3b820e9b9f571\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\cbd6d88549c670e176c3b820e9b9f571\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\7cf625da3026e146b477c514f4e74115\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\7cf625da3026e146b477c514f4e74115\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.7.6] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6e6834c18dd34ab717b66bf9668343b1\transformed\navigation-common-2.7.6\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common:2.7.6] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6e6834c18dd34ab717b66bf9668343b1\transformed\navigation-common-2.7.6\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime:2.7.6] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\87471bfe76de2f6710b27586fa0c12b4\transformed\navigation-runtime-2.7.6\AndroidManifest.xml:20:5-44
@@ -142,6 +173,8 @@ MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\amanm\.gradle\caches
 MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\536abc7b2a1a2430c940cf95c85ea85e\transformed\activity-ktx-1.8.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5f1a683cedb8ab2ba9cbb570f3f3e8ad\transformed\activity-compose-1.8.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5f1a683cedb8ab2ba9cbb570f3f3e8ad\transformed\activity-compose-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\bc0a469913d0e2d4df80f9c59b9835dd\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\bc0a469913d0e2d4df80f9c59b9835dd\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.animation:animation-core-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d7f8592d71d071d366408275ba0a31e4\transformed\animation-core-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.animation:animation-core-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d7f8592d71d071d366408275ba0a31e4\transformed\animation-core-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5569690c36a7690eff357bd24e05730b\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
@@ -172,6 +205,10 @@ MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\amanm\.gradle\caches\9.0-mil
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e2fcef519b7b4b00ec8acfb51e0e07cf\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0803db9f27584a6be0a3452fb708e2d5\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0803db9f27584a6be0a3452fb708e2d5\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9d18cfd7993c6bfdf278e82cbacf07f3\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9d18cfd7993c6bfdf278e82cbacf07f3\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\3a9c3a258f867730f9fa43cfa53e78ae\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\3a9c3a258f867730f9fa43cfa53e78ae\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0c831fc9f86777e8ca88eb6c421f82d2\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0c831fc9f86777e8ca88eb6c421f82d2\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\69bde3d28680600a3c29804e2f79d2af\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
@@ -192,8 +229,12 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\aman
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5120e3952eff6eaa7e244f8db966208c\transformed\lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6db19bf30fa4d71a41207de06651a22f\transformed\ui-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-android:1.6.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6db19bf30fa4d71a41207de06651a22f\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d688e2d61b318a8e01d3cda626ba39b5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d688e2d61b318a8e01d3cda626ba39b5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\3ab22d6ea834d2a6a2155b6ff166b154\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\3ab22d6ea834d2a6a2155b6ff166b154\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\56f59dd9b74e31e05c88b8c27b5d28fb\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\56f59dd9b74e31e05c88b8c27b5d28fb\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.12.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\803bc7eadea8e3fda123543a7addf7f7\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.12.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\803bc7eadea8e3fda123543a7addf7f7\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1e99f6a74c907311893263c0a28ccaf7\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
@@ -226,10 +267,18 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\amanm\.gradle\cach
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1f3aca8e2d06679d70ed792c66032266\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\defc160bd19827f3b7a8d234c063b11d\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\defc160bd19827f3b7a8d234c063b11d\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\VS code\Control habit\app\src\main\AndroidManifest.xml
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a9d4652d40d415ebe7cf16a8c9e15d79\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e2fcef519b7b4b00ec8acfb51e0e07cf\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0803db9f27584a6be0a3452fb708e2d5\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
@@ -330,3 +379,13 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c7606fea2f960d81c3c7858461c9c43a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c7606fea2f960d81c3c7858461c9c43a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:14:9-18:65
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:17:13-42
+	android:exported
+		ADDED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:18:13-62
+	android:name
+		ADDED from [com.google.android.play:core-common:2.0.2] C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\AndroidManifest.xml:15:13-93

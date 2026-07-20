@@ -175,6 +175,7 @@ id view_tree_on_back_pressed_dispatcher_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id wrapped_composition_tag
+integer google_play_services_version
 integer status_bar_notification_info_maxnum
 layout custom_dialog
 layout ime_base_split_test_activity
@@ -201,6 +202,7 @@ string call_notification_screening_text
 string close_drawer
 string close_sheet
 string collapsed
+string common_google_play_services_unknown_issue
 string date_input_headline
 string date_input_headline_description
 string date_input_invalid_for_pattern
@@ -279,6 +281,7 @@ style TextAppearance_Compat_Notification_Line2
 style TextAppearance_Compat_Notification_Time
 style TextAppearance_Compat_Notification_Title
 style Theme_IMyself
+style Theme_PlayCore_Transparent
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 styleable ActivityNavigator android_name action data dataPattern targetPackage

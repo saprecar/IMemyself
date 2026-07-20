@@ -98,6 +98,12 @@ D:\VS code\Control habit\app\build.gradle.kts:69: Warning: A newer version of an
 D:\VS code\Control habit\app\build.gradle.kts:70: Warning: A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.4 [GradleDependency]
     ksp("androidx.room:room-compiler:$roomVersion")
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\VS code\Control habit\app\build.gradle.kts:72: Warning: A newer version of com.google.android.play:review than 2.0.1 is available: 2.0.2 [GradleDependency]
+    implementation("com.google.android.play:review:2.0.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\VS code\Control habit\app\build.gradle.kts:73: Warning: A newer version of com.google.android.play:review-ktx than 2.0.1 is available: 2.0.2 [GradleDependency]
+    implementation("com.google.android.play:review-ktx:2.0.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    Explanation for issues of type "GradleDependency":
    This detector looks for usages of libraries where the version you are using
@@ -117,4 +123,4 @@ D:\VS code\Control habit\app\src\main\AndroidManifest.xml:5: Warning: Should exp
 
    https://developer.android.com/studio/publish/preparing#publishing-configure
 
-0 errors, 13 warnings
+0 errors, 15 warnings

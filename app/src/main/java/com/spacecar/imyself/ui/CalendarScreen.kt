@@ -1,5 +1,6 @@
 package com.spacecar.imyself.ui
 
+import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import androidx.compose.foundation.background
@@ -62,6 +63,14 @@ fun CalendarScreen(
     val startTimeMillis by viewModel.startTimeMillis.collectAsState()
     val firstTrackedDateMillis by viewModel.firstTrackedDateMillis.collectAsState()
     val quote by viewModel.dailyQuote.collectAsState()
+    val context = LocalContext.current
+
+    LaunchedEffect(Unit) {
+        val activity = context as? Activity
+        if (activity != null) {
+            AppReviewManager.tryShowReviewPrompt(activity, firstTrackedDateMillis)
+        }
+    }
 
     var editingDate by remember { mutableStateOf<String?>(null) }
     var editingState by remember { mutableStateOf<LogState?>(null) }
@@ -70,8 +79,6 @@ fun CalendarScreen(
     var showMotivationDialog by remember { mutableStateOf<Long?>(null) } // holds timestamp or retroactive date millis
 
     val targetDate = Instant.ofEpochMilli(startTimeMillis).atZone(ZoneId.systemDefault()).toLocalDate().plusDays(activeMilestone?.targetDay?.toLong() ?: 0L)
-
-    val context = LocalContext.current
 
     val showTimePickerForDate = { dateStr: String ->
         val parsedDate = LocalDate.parse(dateStr, DateTimeFormatter.ISO_LOCAL_DATE)
