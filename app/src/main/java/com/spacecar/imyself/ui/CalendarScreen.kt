@@ -160,6 +160,13 @@ fun CalendarScreen(
                         color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
                     )
                     Text(
+                        text = "Target Date: ${targetDate.format(DateTimeFormatter.ofPattern("MMM dd, yyyy"))}",
+                        style = MaterialTheme.typography.labelMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.6f),
+                        modifier = Modifier.padding(top = 4.dp)
+                    )
+                    Text(
                         text = timeLeft,
                         style = MaterialTheme.typography.displayMedium,
                         fontWeight = FontWeight.ExtraBold,
@@ -428,7 +435,7 @@ fun MonthCalendar(logs: List<DailyLog>, appStartMillis: Long, targetDate: LocalD
                     val log = logs.find { it.date == dateStr }
                     val isFuture = date.isAfter(today)
                     val isStartOrAfter = !date.isBefore(appStartDate) && !isFuture
-                    val isClickable = !isFuture && !date.isBefore(appStartDate)
+                    val isClickable = !isFuture // allow clicking any past date to retroactively track
 
                     DayCell(
                         date = dateStr,
