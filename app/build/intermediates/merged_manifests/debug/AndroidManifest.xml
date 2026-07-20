@@ -23,6 +23,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.IMyself" >
         <activity
             android:name="com.spacecar.imyself.MainActivity"
