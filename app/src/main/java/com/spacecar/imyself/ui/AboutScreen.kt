@@ -10,16 +10,47 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import android.widget.Toast
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import com.spacecar.imyself.data.BackupManager
+import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AboutScreen(onBack: () -> Unit) {
+fun AboutScreen(viewModel: TrackingViewModel, onBack: () -> Unit) {
     val context = LocalContext.current
+    val coroutineScope = rememberCoroutineScope()
+
+    val exportLauncher = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
+        if (uri != null) {
+            coroutineScope.launch {
+                val backupManager = BackupManager(context, viewModel.repository)
+                backupManager.exportToUri(uri)
+                Toast.makeText(context, "Backup Exported Successfully!", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    val importLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) {
+            coroutineScope.launch {
+                val backupManager = BackupManager(context, viewModel.repository)
+                val success = backupManager.importFromUri(uri)
+                if (success) {
+                    Toast.makeText(context, "Backup Restored! Please restart app.", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(context, "Failed to restore backup.", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
 
     val openLink = { url: String ->
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
@@ -77,6 +108,29 @@ fun AboutScreen(onBack: () -> Unit) {
                 headlineContent = { Text("License Agreement (EULA)") },
                 supportingContent = { Text("View the custom proprietary License") },
                 modifier = Modifier.clickable { openLink("https://github.com/saprecar/IMemyself/blob/main/LICENSE.md") }
+            )
+
+            Divider(modifier = Modifier.padding(vertical = 8.dp))
+
+            Text("Data & Backup (Offline)", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+            
+            ListItem(
+                headlineContent = { Text("Export Backup") },
+                supportingContent = { Text("Save your data to a plain text JSON file") },
+                modifier = Modifier.clickable { exportLauncher.launch("IMyself_Backup.json") }
+            )
+
+            ListItem(
+                headlineContent = { Text("Import Backup") },
+                supportingContent = { Text("Restore data from a JSON file (Overwrites current data)") },
+                modifier = Modifier.clickable { importLauncher.launch(arrayOf("application/json")) }
+            )
+            
+            Text(
+                text = "✓ Auto-backup runs silently in the background every 24 hours.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.padding(horizontal = 16.dp)
             )
 
             Divider(modifier = Modifier.padding(vertical = 8.dp))

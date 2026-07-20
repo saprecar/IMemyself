@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.spacecar.imyself.app-mergeDebugResources-53:/values-as/values-as.xml",
+            "outputFile": "com.spacecar.imyself.app-mergeDebugResources-56:/values-as/values-as.xml",
             "map": [
                 {
                     "source": "C:\\Users\\amanm\\.gradle\\caches\\9.0-milestone-1\\transforms\\a9d4652d40d415ebe7cf16a8c9e15d79\\transformed\\play-services-basement-18.1.0\\res\\values-as\\values.xml",

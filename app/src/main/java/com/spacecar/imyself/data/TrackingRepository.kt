@@ -51,4 +51,19 @@ class TrackingRepository(private val trackingDao: TrackingDao) {
     suspend fun deletePersonalLog(log: PersonalLog) {
         trackingDao.deletePersonalLog(log)
     }
+
+    suspend fun getAllDailyLogsDirectly(): List<DailyLog> {
+        return trackingDao.getAllLogsDirectly()
+    }
+
+    suspend fun getAllPersonalLogsDirectly(): List<PersonalLog> {
+        return trackingDao.getAllPersonalLogsDirectly()
+    }
+
+    suspend fun restoreAllData(dailyLogs: List<DailyLog>, personalLogs: List<PersonalLog>) {
+        trackingDao.clearAllDailyLogs()
+        trackingDao.clearAllPersonalLogs()
+        trackingDao.insertAllDailyLogs(dailyLogs)
+        trackingDao.insertAllPersonalLogs(personalLogs)
+    }
 }

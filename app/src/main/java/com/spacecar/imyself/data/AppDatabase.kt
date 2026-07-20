@@ -17,6 +17,15 @@ interface TrackingDao {
     @Query("SELECT * FROM daily_log ORDER BY date ASC")
     fun getAllLogs(): Flow<List<DailyLog>>
 
+    @Query("SELECT * FROM daily_log ORDER BY date ASC")
+    suspend fun getAllLogsDirectly(): List<DailyLog>
+
+    @Query("DELETE FROM daily_log")
+    suspend fun clearAllDailyLogs()
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAllDailyLogs(logs: List<DailyLog>)
+
     @Query("SELECT * FROM daily_log WHERE date = :date LIMIT 1")
     suspend fun getLogByDate(date: String): DailyLog?
 
@@ -46,6 +55,15 @@ interface TrackingDao {
 
     @Query("SELECT * FROM personal_logs ORDER BY timestamp DESC")
     fun getAllPersonalLogs(): Flow<List<PersonalLog>>
+
+    @Query("SELECT * FROM personal_logs ORDER BY timestamp DESC")
+    suspend fun getAllPersonalLogsDirectly(): List<PersonalLog>
+
+    @Query("DELETE FROM personal_logs")
+    suspend fun clearAllPersonalLogs()
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAllPersonalLogs(logs: List<PersonalLog>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertPersonalLog(log: PersonalLog)

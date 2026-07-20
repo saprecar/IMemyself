@@ -104,6 +104,9 @@ D:\VS code\Control habit\app\build.gradle.kts:72: Warning: A newer version of co
 D:\VS code\Control habit\app\build.gradle.kts:73: Warning: A newer version of com.google.android.play:review-ktx than 2.0.1 is available: 2.0.2 [GradleDependency]
     implementation("com.google.android.play:review-ktx:2.0.1")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\VS code\Control habit\app\build.gradle.kts:76: Warning: A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.11.2 [GradleDependency]
+    implementation("androidx.work:work-runtime-ktx:$workVersion")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    Explanation for issues of type "GradleDependency":
    This detector looks for usages of libraries where the version you are using
@@ -146,4 +149,4 @@ D:\VS code\Control habit\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.png: 
    sometimes point to icons that were accidentally overwritten or accidentally
    not updated.
 
-0 errors, 29 warnings
+0 errors, 30 warnings

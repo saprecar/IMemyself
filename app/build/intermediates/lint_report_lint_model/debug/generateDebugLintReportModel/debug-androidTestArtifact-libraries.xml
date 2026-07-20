@@ -221,6 +221,32 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.work:work-runtime-ktx:2.9.0@aar"
+      jars="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0a63eb7bc690f9f265639ab1ce9ee813\transformed\work-runtime-ktx-2.9.0\jars\classes.jar"
+      resolved="androidx.work:work-runtime-ktx:2.9.0"
+      folder="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0a63eb7bc690f9f265639ab1ce9ee813\transformed\work-runtime-ktx-2.9.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.work:work-runtime:2.9.0@aar"
+      jars="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\ac92553681662e07612897cf3395047d\transformed\work-runtime-2.9.0\jars\classes.jar"
+      resolved="androidx.work:work-runtime:2.9.0"
+      folder="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\ac92553681662e07612897cf3395047d\transformed\work-runtime-2.9.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0@aar"
       jars="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\9d18cfd7993c6bfdf278e82cbacf07f3\transformed\lifecycle-livedata-core-ktx-2.7.0\jars\classes.jar"
       resolved="androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0"
@@ -737,6 +763,23 @@
       jars="C:\Users\amanm\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\23.0.0\8cc20c07506ec18e0834947b84a864bfc094484e\annotations-23.0.0.jar"
       resolved="org.jetbrains:annotations:23.0.0"/>
   <library
+      name="com.google.guava:listenablefuture:1.0@jar"
+      jars="C:\Users\amanm\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\1.0\c949a840a6acbc5268d088e47b04177bf90b3cad\listenablefuture-1.0.jar"
+      resolved="com.google.guava:listenablefuture:1.0"/>
+  <library
+      name="androidx.startup:startup-runtime:1.1.1@aar"
+      jars="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1f3aca8e2d06679d70ed792c66032266\transformed\startup-runtime-1.1.1\jars\classes.jar"
+      resolved="androidx.startup:startup-runtime:1.1.1"
+      folder="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1f3aca8e2d06679d70ed792c66032266\transformed\startup-runtime-1.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="com.google.android.play:core-common:2.0.2@aar"
       jars="C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\86d8de0d0e22748803bd0c8060aae320\transformed\core-common-2.0.2\jars\classes.jar"
       resolved="com.google.android.play:core-common:2.0.2"
@@ -749,6 +792,10 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="com.google.code.gson:gson:2.10.1@jar"
+      jars="C:\Users\amanm\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10.1\b3add478d4382b78ea20b1671390a858002feb6c\gson-2.10.1.jar"
+      resolved="com.google.code.gson:gson:2.10.1"/>
   <library
       name=":@@:app::debug"
       project=":app"/>

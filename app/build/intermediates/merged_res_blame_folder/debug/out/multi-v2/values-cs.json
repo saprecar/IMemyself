@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.spacecar.imyself.app-mergeDebugResources-53:/values-cs/values-cs.xml",
+            "outputFile": "com.spacecar.imyself.app-mergeDebugResources-56:/values-cs/values-cs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\amanm\\.gradle\\caches\\9.0-milestone-1\\transforms\\44f4d142fd1043635dbbe180e2ed47b2\\transformed\\material3-1.1.2\\res\\values-cs\\values-cs.xml",

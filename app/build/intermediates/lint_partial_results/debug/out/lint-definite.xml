@@ -232,6 +232,20 @@
     </incident>
 
     <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.11.2">
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="76"
+            column="20"
+            startOffset="2294"
+            endLine="76"
+            endColumn="65"
+            endOffset="2339"/>
+    </incident>
+
+    <incident
         id="IconLauncherShape"
         severity="warning"
         message="Launcher icons should not fill every pixel of their square region; see the design guide for details">

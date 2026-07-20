@@ -1,50 +1,50 @@
 [
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\amanm\\.gradle\\daemon\\9.0-milestone-1\\com.spacecar.imyself.app-merged_res-55:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\amanm\\.gradle\\daemon\\9.0-milestone-1\\com.spacecar.imyself.app-main-57:\\xml\\backup_rules.xml"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/xml_backup_rules.xml.flat",
+        "source": "com.spacecar.imyself.app-main-60:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\amanm\\.gradle\\daemon\\9.0-milestone-1\\com.spacecar.imyself.app-merged_res-55:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\amanm\\.gradle\\daemon\\9.0-milestone-1\\com.spacecar.imyself.app-main-57:\\xml\\data_extraction_rules.xml"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/xml_data_extraction_rules.xml.flat",
+        "source": "com.spacecar.imyself.app-main-60:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.spacecar.imyself.app-merged_res-55:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.spacecar.imyself.app-main-57:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.spacecar.imyself.app-merged_res-58:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.spacecar.imyself.app-main-60:/mipmap-hdpi/ic_launcher.png"
     }
 ]

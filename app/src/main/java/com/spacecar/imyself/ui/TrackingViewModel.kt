@@ -24,7 +24,7 @@ import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 
 class TrackingViewModel(application: Application) : AndroidViewModel(application) {
-    private val repository: TrackingRepository
+    val repository: TrackingRepository
     private val sharedPrefs = application.getSharedPreferences("tracking_prefs", Context.MODE_PRIVATE)
     
     private val _logs = MutableStateFlow<List<DailyLog>>(emptyList())

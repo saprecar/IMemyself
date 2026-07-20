@@ -44,9 +44,13 @@ public final class TrackingDao_Impl implements TrackingDao {
 
   private final EntityDeletionOrUpdateAdapter<PersonalLog> __updateAdapterOfPersonalLog;
 
+  private final SharedSQLiteStatement __preparedStmtOfClearAllDailyLogs;
+
   private final SharedSQLiteStatement __preparedStmtOfDeleteLogByDate;
 
   private final SharedSQLiteStatement __preparedStmtOfClearUnlockedMilestones;
+
+  private final SharedSQLiteStatement __preparedStmtOfClearAllPersonalLogs;
 
   public TrackingDao_Impl(@NonNull final RoomDatabase __db) {
     this.__db = __db;
@@ -140,6 +144,14 @@ public final class TrackingDao_Impl implements TrackingDao {
         statement.bindLong(6, entity.getId());
       }
     };
+    this.__preparedStmtOfClearAllDailyLogs = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "DELETE FROM daily_log";
+        return _query;
+      }
+    };
     this.__preparedStmtOfDeleteLogByDate = new SharedSQLiteStatement(__db) {
       @Override
       @NonNull
@@ -156,6 +168,33 @@ public final class TrackingDao_Impl implements TrackingDao {
         return _query;
       }
     };
+    this.__preparedStmtOfClearAllPersonalLogs = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "DELETE FROM personal_logs";
+        return _query;
+      }
+    };
+  }
+
+  @Override
+  public Object insertAllDailyLogs(final List<DailyLog> logs,
+      final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        __db.beginTransaction();
+        try {
+          __insertionAdapterOfDailyLog.insert(logs);
+          __db.setTransactionSuccessful();
+          return Unit.INSTANCE;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    }, $completion);
   }
 
   @Override
@@ -186,6 +225,25 @@ public final class TrackingDao_Impl implements TrackingDao {
         __db.beginTransaction();
         try {
           __insertionAdapterOfStreakMilestone.insert(milestone);
+          __db.setTransactionSuccessful();
+          return Unit.INSTANCE;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
+  public Object insertAllPersonalLogs(final List<PersonalLog> logs,
+      final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        __db.beginTransaction();
+        try {
+          __insertionAdapterOfPersonalLog.insert(logs);
           __db.setTransactionSuccessful();
           return Unit.INSTANCE;
         } finally {
@@ -253,6 +311,29 @@ public final class TrackingDao_Impl implements TrackingDao {
   }
 
   @Override
+  public Object clearAllDailyLogs(final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        final SupportSQLiteStatement _stmt = __preparedStmtOfClearAllDailyLogs.acquire();
+        try {
+          __db.beginTransaction();
+          try {
+            _stmt.executeUpdateDelete();
+            __db.setTransactionSuccessful();
+            return Unit.INSTANCE;
+          } finally {
+            __db.endTransaction();
+          }
+        } finally {
+          __preparedStmtOfClearAllDailyLogs.release(_stmt);
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
   public Object deleteLogByDate(final String date, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
@@ -301,6 +382,29 @@ public final class TrackingDao_Impl implements TrackingDao {
   }
 
   @Override
+  public Object clearAllPersonalLogs(final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        final SupportSQLiteStatement _stmt = __preparedStmtOfClearAllPersonalLogs.acquire();
+        try {
+          __db.beginTransaction();
+          try {
+            _stmt.executeUpdateDelete();
+            __db.setTransactionSuccessful();
+            return Unit.INSTANCE;
+          } finally {
+            __db.endTransaction();
+          }
+        } finally {
+          __preparedStmtOfClearAllPersonalLogs.release(_stmt);
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
   public Flow<List<DailyLog>> getAllLogs() {
     final String _sql = "SELECT * FROM daily_log ORDER BY date ASC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
@@ -340,6 +444,45 @@ public final class TrackingDao_Impl implements TrackingDao {
         _statement.release();
       }
     });
+  }
+
+  @Override
+  public Object getAllLogsDirectly(final Continuation<? super List<DailyLog>> $completion) {
+    final String _sql = "SELECT * FROM daily_log ORDER BY date ASC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
+    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<DailyLog>>() {
+      @Override
+      @NonNull
+      public List<DailyLog> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
+          final int _cursorIndexOfState = CursorUtil.getColumnIndexOrThrow(_cursor, "state");
+          final int _cursorIndexOfNotes = CursorUtil.getColumnIndexOrThrow(_cursor, "notes");
+          final List<DailyLog> _result = new ArrayList<DailyLog>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final DailyLog _item;
+            final String _tmpDate;
+            _tmpDate = _cursor.getString(_cursorIndexOfDate);
+            final LogState _tmpState;
+            _tmpState = __LogState_stringToEnum(_cursor.getString(_cursorIndexOfState));
+            final String _tmpNotes;
+            if (_cursor.isNull(_cursorIndexOfNotes)) {
+              _tmpNotes = null;
+            } else {
+              _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
+            }
+            _item = new DailyLog(_tmpDate,_tmpState,_tmpNotes);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+          _statement.release();
+        }
+      }
+    }, $completion);
   }
 
   @Override
@@ -596,6 +739,50 @@ public final class TrackingDao_Impl implements TrackingDao {
         _statement.release();
       }
     });
+  }
+
+  @Override
+  public Object getAllPersonalLogsDirectly(
+      final Continuation<? super List<PersonalLog>> $completion) {
+    final String _sql = "SELECT * FROM personal_logs ORDER BY timestamp DESC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
+    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<PersonalLog>>() {
+      @Override
+      @NonNull
+      public List<PersonalLog> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfTimestamp = CursorUtil.getColumnIndexOrThrow(_cursor, "timestamp");
+          final int _cursorIndexOfMoodEmoji = CursorUtil.getColumnIndexOrThrow(_cursor, "moodEmoji");
+          final int _cursorIndexOfNote = CursorUtil.getColumnIndexOrThrow(_cursor, "note");
+          final int _cursorIndexOfIsFellLog = CursorUtil.getColumnIndexOrThrow(_cursor, "isFellLog");
+          final List<PersonalLog> _result = new ArrayList<PersonalLog>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final PersonalLog _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final long _tmpTimestamp;
+            _tmpTimestamp = _cursor.getLong(_cursorIndexOfTimestamp);
+            final String _tmpMoodEmoji;
+            _tmpMoodEmoji = _cursor.getString(_cursorIndexOfMoodEmoji);
+            final String _tmpNote;
+            _tmpNote = _cursor.getString(_cursorIndexOfNote);
+            final boolean _tmpIsFellLog;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfIsFellLog);
+            _tmpIsFellLog = _tmp != 0;
+            _item = new PersonalLog(_tmpId,_tmpTimestamp,_tmpMoodEmoji,_tmpNote,_tmpIsFellLog);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+          _statement.release();
+        }
+      }
+    }, $completion);
   }
 
   @NonNull

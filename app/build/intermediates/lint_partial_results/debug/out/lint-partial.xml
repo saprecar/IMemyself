@@ -12,12 +12,12 @@
                     <map id="android.intent.action.VIEW (used to start an activity)">
                         <location id="0"
                             file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/spacecar/imyself/ui/AboutScreen.kt"
-                            line="25"
+                            line="56"
                             column="22"
-                            startOffset="858"
-                            endLine="25"
+                            startOffset="2313"
+                            endLine="56"
                             endColumn="64"
-                            endOffset="900"/>
+                            endOffset="2355"/>
                         <location id="1"
                             file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/spacecar/imyself/ui/DisclaimerScreen.kt"
                             line="26"
@@ -30,12 +30,12 @@
                     <map id="android.intent.action.SENDTO (used to start an activity)">
                         <location id="0"
                             file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/spacecar/imyself/ui/AboutScreen.kt"
-                            line="90"
+                            line="144"
                             column="34"
-                            startOffset="3683"
-                            endLine="90"
+                            startOffset="6241"
+                            endLine="144"
                             endColumn="105"
-                            endOffset="3754"/>
+                            endOffset="6312"/>
                     </map>
             </map>
     </map>

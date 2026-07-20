@@ -5,6 +5,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
+import androidx.work.ExistingPeriodicWorkPolicy
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.WorkManager
+import java.util.concurrent.TimeUnit
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
@@ -21,7 +25,7 @@ import com.spacecar.imyself.ui.PersonalLogScreen
 import com.spacecar.imyself.ui.ReportScreen
 import com.spacecar.imyself.ui.RuleBookScreen
 import com.spacecar.imyself.ui.TrackingViewModel
-
+import com.spacecar.imyself.data.AutoBackupWorker
 import com.spacecar.imyself.ui.theme.IMyselfTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,6 +33,14 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        val backupRequest = PeriodicWorkRequestBuilder<AutoBackupWorker>(24, TimeUnit.HOURS).build()
+        WorkManager.getInstance(this).enqueueUniquePeriodicWork(
+            "auto_backup",
+            ExistingPeriodicWorkPolicy.KEEP,
+            backupRequest
+        )
+
         val sharedPrefs = getSharedPreferences("theme_prefs", Context.MODE_PRIVATE)
         val disclaimerPrefs = getSharedPreferences("disclaimer_prefs", Context.MODE_PRIVATE)
         
@@ -110,7 +122,7 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable("about") {
-                            AboutScreen(onBack = { navController.popBackStack() })
+                            AboutScreen(viewModel = trackingViewModel, onBack = { navController.popBackStack() })
                         }
                     }
                 }

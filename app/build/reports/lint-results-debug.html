@@ -177,9 +177,9 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 29 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 30 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Tue Jul 21 00:38:17 IST 2026 by AGP (8.2.0)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Tue Jul 21 00:44:54 IST 2026 by AGP (8.2.0)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -189,7 +189,7 @@ document.getElementById(id).style.display = 'none';
       <a class="mdl-navigation__link" href="#ObsoleteLintCustomCheck"><i class="material-icons warning-icon">warning</i>Obsolete custom lint check (1)</a>
       <a class="mdl-navigation__link" href="#OldTargetApi"><i class="material-icons warning-icon">warning</i>Target SDK attribute is not targeting latest version (1)</a>
       <a class="mdl-navigation__link" href="#RedundantLabel"><i class="material-icons warning-icon">warning</i>Redundant label on activity (1)</a>
-      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (11)</a>
+      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (12)</a>
       <a class="mdl-navigation__link" href="#IconLauncherShape"><i class="material-icons warning-icon">warning</i>The launcher icon shape should use a distinct silhouette (10)</a>
       <a class="mdl-navigation__link" href="#IconDuplicates"><i class="material-icons warning-icon">warning</i>Duplicated icons under different names (5)</a>
     </nav>
@@ -218,7 +218,7 @@ document.getElementById(id).style.display = 'none';
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#RedundantLabel">RedundantLabel</a>: Redundant label on activity</td></tr>
 <tr>
-<td class="countColumn">11</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">12</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#GradleDependency">GradleDependency</a>: Obsolete Gradle Dependency</td></tr>
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
 </td></tr>
@@ -228,7 +228,7 @@ document.getElementById(id).style.display = 'none';
 <tr>
 <td class="countColumn">5</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#IconDuplicates">IconDuplicates</a>: Duplicated icons under different names</td></tr>
-<tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (37)</a>
+<tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (46)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (39)</a>
 </td></tr>
@@ -460,7 +460,7 @@ Dismiss</button>            </div>
 <span class="lineno"> 66 </span>    
 </pre>
 
-<button class="mdl-button mdl-js-button mdl-button--primary" id="GradleDependencyDivLink" onclick="reveal('GradleDependencyDiv');" />+ 6 More Occurrences...</button>
+<button class="mdl-button mdl-js-button mdl-button--primary" id="GradleDependencyDivLink" onclick="reveal('GradleDependencyDiv');" />+ 7 More Occurrences...</button>
 <div id="GradleDependencyDiv" style="display: none">
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:64</span>: <span class="message">A newer version of androidx.navigation:navigation-compose than 2.7.6 is available: 2.9.8</span><br /><pre class="errorlines">
 <span class="lineno"> 61 </span>    implementation("androidx.compose.ui:ui-tooling-preview")
@@ -507,7 +507,8 @@ Dismiss</button>            </div>
 <span class="lineno"> 71 </span>
 <span class="caretline"><span class="lineno"> 72 </span>    implementation("<span class="warning">com.google.android.play:review:2.0.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 73 </span>    implementation("com.google.android.play:review-ktx:2.0.1")
-<span class="lineno"> 74 </span>}
+<span class="lineno"> 74 </span>    
+<span class="lineno"> 75 </span>    val workVersion = "2.9.0"
 </pre>
 
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:73</span>: <span class="message">A newer version of com.google.android.play:review-ktx than 2.0.1 is available: 2.0.2</span><br /><pre class="errorlines">
@@ -515,7 +516,18 @@ Dismiss</button>            </div>
 <span class="lineno"> 71 </span>
 <span class="lineno"> 72 </span>    implementation("com.google.android.play:review:2.0.1")
 <span class="caretline"><span class="lineno"> 73 </span>    implementation("<span class="warning">com.google.android.play:review-ktx:2.0.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 74 </span>}
+<span class="lineno"> 74 </span>    
+<span class="lineno"> 75 </span>    val workVersion = "2.9.0"
+<span class="lineno"> 76 </span>    implementation("androidx.work:work-runtime-ktx:$workVersion")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:76</span>: <span class="message">A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.11.2</span><br /><pre class="errorlines">
+<span class="lineno"> 73 </span>    implementation("com.google.android.play:review-ktx:2.0.1")
+<span class="lineno"> 74 </span>    
+<span class="lineno"> 75 </span>    val workVersion = "2.9.0"
+<span class="caretline"><span class="lineno"> 76 </span>    implementation(<span class="warning">"androidx.work:work-runtime-ktx:$workVersion"</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 77 </span>    implementation("com.google.code.gson:gson:2.10.1")
+<span class="lineno"> 78 </span>}
 </pre>
 
 </div>
@@ -713,6 +725,35 @@ whether a particular check is included in analysis when configuring builds.
 (Note that the list does not include the hundreds of built-in checks into lint,
 only additional ones.)
 <div id="IncludedIssues" style="display: none;"><br/><br/><div class="issue">
+<div class="id">BadConfigurationProvider<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+An <code>android.app.Application</code> must implement <code>androidx.work.Configuration.Provider</code><br/>
+for on-demand initialization.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">BadPeriodicWorkRequestEnqueue<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+When using <code>enqueue()</code> for `PeriodicWorkRequest`s, you might end up enqueuing<br/>
+duplicate requests unintentionally. You should be using<br/>
+<code>enqueueUniquePeriodicWork</code> with an <code>ExistingPeriodicWorkPolicy.KEEP</code> instead.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
 <div class="id">ComposableDestinationInComposeScope<div class="issueSeparator"></div>
 </div>
 <div class="metadata"><div class="explanation">
@@ -815,6 +856,20 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">
 </div>
 </div>
 <div class="issue">
+<div class="id">IdleBatteryChargingConstraints<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+Some devices are never considered charging and idle at the same time.<br/>
+Consider removing one of these constraints.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
 <div class="id">InvalidColorHexValue<div class="issueSeparator"></div>
 </div>
 <div class="metadata"><div class="explanation">
@@ -836,6 +891,19 @@ In order to use the ActivityResult APIs you must upgrade your                 Fr
 Vendor: Android Open Source Project<br/>
 Identifier: androidx.activity<br/>
 Feedback: <a href="https://issuetracker.google.com/issues/new?component=527362">https://issuetracker.google.com/issues/new?component=527362</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">InvalidPeriodicWorkRequestInterval<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+The interval duration for a <code>PeriodicWorkRequest</code> must be at least 15 minutes.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
 </div>
 <br/>
 <br/></div>
@@ -991,6 +1059,21 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">
 </div>
 </div>
 <div class="issue">
+<div class="id">RemoveWorkManagerInitializer<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+If an <code>android.app.Application</code> implements <code>androidx.work.Configuration.Provider</code>,<br/>
+the default <code>androidx.startup.InitializationProvider</code> needs to be removed from the<br/>
+AndroidManifest.xml file.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
 <div class="id">RepeatOnLifecycleWrongUsage<div class="issueSeparator"></div>
 </div>
 <div class="metadata"><div class="explanation">
@@ -1011,6 +1094,33 @@ Pointer Input events are queued inside awaitPointerEventScope. By using the retu
 Vendor: Jetpack Compose<br/>
 Identifier: androidx.compose.ui<br/>
 Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">https://issuetracker.google.com/issues/new?component=612128</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">SpecifyForegroundServiceType<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+When using the setForegroundAsync() API, the application must override &lt;service /> entry for <code>SystemForegroundService</code> to include the foreground service type in the  <code>AndroidManifest.xml</code> file.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">SpecifyJobSchedulerIdRange<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+When using <code>JobScheduler</code> APIs directly, <code>WorkManager</code> requires that developers specify a range of <code>JobScheduler</code> ids that are safe for <code>WorkManager</code> to use so the `id`s do not collide. <br/>
+For more information look at <code>androidx.work.Configuration.Builder.setJobSchedulerJobIdRange(int, int)</code>.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
 </div>
 <br/>
 <br/></div>
@@ -1228,6 +1338,33 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">
 Vendor: Jetpack Compose<br/>
 Identifier: androidx.compose.foundation<br/>
 Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">https://issuetracker.google.com/issues/new?component=612128</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UseRxSetProgress2<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+Use <code>setCompletableProgress(...)</code> instead of `setProgress(...) in <code>RxWorker</code>.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">WorkerHasAPublicModifier<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+When you define a ListenableWorker which is constructed using the <br/>
+default WorkerFactory, the ListenableWorker sub-type needs to be public.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.work<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
 </div>
 <br/>
 <br/></div>
