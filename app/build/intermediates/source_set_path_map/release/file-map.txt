@@ -1,0 +1,53 @@
+com.spacecar.imyself.app-savedstate-1.2.1-0 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0688b9a2316a312247be28450afb306b\transformed\savedstate-1.2.1\res
+com.spacecar.imyself.app-lifecycle-process-2.7.0-1 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0803db9f27584a6be0a3452fb708e2d5\transformed\lifecycle-process-2.7.0\res
+com.spacecar.imyself.app-lifecycle-livedata-core-2.7.0-2 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\0c831fc9f86777e8ca88eb6c421f82d2\transformed\lifecycle-livedata-core-2.7.0\res
+com.spacecar.imyself.app-sqlite-2.4.0-3 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\13ce1ffb3be18db7bf8308bdc4f12e22\transformed\sqlite-2.4.0\res
+com.spacecar.imyself.app-ui-tooling-preview-release-4 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1514a9a32504f02fca92ee9896283c5c\transformed\ui-tooling-preview-release\res
+com.spacecar.imyself.app-customview-poolingcontainer-1.0.0-5 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1e99f6a74c907311893263c0a28ccaf7\transformed\customview-poolingcontainer-1.0.0\res
+com.spacecar.imyself.app-startup-runtime-1.1.1-6 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\1f3aca8e2d06679d70ed792c66032266\transformed\startup-runtime-1.1.1\res
+com.spacecar.imyself.app-foundation-layout-release-7 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\253267774726b34c3e2e5f342814acad\transformed\foundation-layout-release\res
+com.spacecar.imyself.app-navigation-runtime-ktx-2.7.6-8 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\2da23398ab2bd04fef037ffb0ecb281c\transformed\navigation-runtime-ktx-2.7.6\res
+com.spacecar.imyself.app-runtime-saveable-release-9 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\3d17971f5adeda5ae6fcb691aea0a366\transformed\runtime-saveable-release\res
+com.spacecar.imyself.app-ui-unit-release-10 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\429ef021d6adc73d921002c09cf5df09\transformed\ui-unit-release\res
+com.spacecar.imyself.app-material3-1.1.2-11 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\44f4d142fd1043635dbbe180e2ed47b2\transformed\material3-1.1.2\res
+com.spacecar.imyself.app-runtime-release-12 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\45496829a2fa15c9d2f098a0468b78d7\transformed\runtime-release\res
+com.spacecar.imyself.app-navigation-common-ktx-2.7.6-13 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\461d1f51e0e28bcf233fc4abc2a596dc\transformed\navigation-common-ktx-2.7.6\res
+com.spacecar.imyself.app-sqlite-framework-2.4.0-14 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\4c86a23c9a224fa7076fa70b9b2a04ba\transformed\sqlite-framework-2.4.0\res
+com.spacecar.imyself.app-lifecycle-viewmodel-compose-2.7.0-15 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5120e3952eff6eaa7e244f8db966208c\transformed\lifecycle-viewmodel-compose-2.7.0\res
+com.spacecar.imyself.app-activity-ktx-1.8.2-16 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\536abc7b2a1a2430c940cf95c85ea85e\transformed\activity-ktx-1.8.2\res
+com.spacecar.imyself.app-material-icons-core-release-17 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5569690c36a7690eff357bd24e05730b\transformed\material-icons-core-release\res
+com.spacecar.imyself.app-navigation-compose-2.7.6-18 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\585d4ec09e40ffdb46c8b958a707d135\transformed\navigation-compose-2.7.6\res
+com.spacecar.imyself.app-activity-compose-1.8.2-19 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5f1a683cedb8ab2ba9cbb570f3f3e8ad\transformed\activity-compose-1.8.2\res
+com.spacecar.imyself.app-lifecycle-runtime-ktx-2.7.0-20 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\5fbee9b3946ceaff7818b3c1903a4d91\transformed\lifecycle-runtime-ktx-2.7.0\res
+com.spacecar.imyself.app-core-runtime-2.2.0-21 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\613381154734c6ce33a6da37dcb92d57\transformed\core-runtime-2.2.0\res
+com.spacecar.imyself.app-ui-geometry-release-22 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\676f5222364699102d3a0edf598f7e8a\transformed\ui-geometry-release\res
+com.spacecar.imyself.app-savedstate-ktx-1.2.1-23 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\69bde3d28680600a3c29804e2f79d2af\transformed\savedstate-ktx-1.2.1\res
+com.spacecar.imyself.app-ui-release-24 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6db19bf30fa4d71a41207de06651a22f\transformed\ui-release\res
+com.spacecar.imyself.app-navigation-common-2.7.6-25 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\6e6834c18dd34ab717b66bf9668343b1\transformed\navigation-common-2.7.6\res
+com.spacecar.imyself.app-activity-1.8.2-26 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\745dedaf47f474378311991a10e49779\transformed\activity-1.8.2\res
+com.spacecar.imyself.app-lifecycle-viewmodel-savedstate-2.7.0-27 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\74e055e662ef3d403b4a16e2b858384b\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
+com.spacecar.imyself.app-material-ripple-release-28 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\7ce471be81823d7e2d4b96c63cfe3e22\transformed\material-ripple-release\res
+com.spacecar.imyself.app-core-1.12.0-29 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\803bc7eadea8e3fda123543a7addf7f7\transformed\core-1.12.0\res
+com.spacecar.imyself.app-navigation-runtime-2.7.6-30 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\87471bfe76de2f6710b27586fa0c12b4\transformed\navigation-runtime-2.7.6\res
+com.spacecar.imyself.app-room-runtime-2.6.1-31 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\915e0aca86a68845672305a6b7b9ee2a\transformed\room-runtime-2.6.1\res
+com.spacecar.imyself.app-ui-text-release-32 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\a2727858fbf76692078d44fe0ce8b37c\transformed\ui-text-release\res
+com.spacecar.imyself.app-ui-graphics-release-33 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c2e7388cb874cb229a9331165b1bb185\transformed\ui-graphics-release\res
+com.spacecar.imyself.app-profileinstaller-1.3.0-34 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\c7606fea2f960d81c3c7858461c9c43a\transformed\profileinstaller-1.3.0\res
+com.spacecar.imyself.app-lifecycle-viewmodel-ktx-2.7.0-35 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\cb06785c9752169b09f9ca2ac1ec3cce\transformed\lifecycle-viewmodel-ktx-2.7.0\res
+com.spacecar.imyself.app-animation-release-36 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d0e02cc0c70bde82c38b674fa768b9f0\transformed\animation-release\res
+com.spacecar.imyself.app-animation-core-release-37 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d7f8592d71d071d366408275ba0a31e4\transformed\animation-core-release\res
+com.spacecar.imyself.app-room-ktx-2.6.1-38 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\d9ac6c4c90916a0aa500c961d000da26\transformed\room-ktx-2.6.1\res
+com.spacecar.imyself.app-lifecycle-runtime-2.7.0-39 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\daa379547be169b454234f5745a3aee6\transformed\lifecycle-runtime-2.7.0\res
+com.spacecar.imyself.app-annotation-experimental-1.3.0-40 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\dd33c714472963c445bb65939a0dc9f1\transformed\annotation-experimental-1.3.0\res
+com.spacecar.imyself.app-core-ktx-1.12.0-41 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\df2f2b5cd118cd6b59a6b09bdb91b0fb\transformed\core-ktx-1.12.0\res
+com.spacecar.imyself.app-emoji2-1.3.0-42 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e2fcef519b7b4b00ec8acfb51e0e07cf\transformed\emoji2-1.3.0\res
+com.spacecar.imyself.app-foundation-release-43 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e6bdef1455b5306d43b0d8c6e16219ec\transformed\foundation-release\res
+com.spacecar.imyself.app-ui-util-release-44 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\e9568703bc8ca50652b837da53265a67\transformed\ui-util-release\res
+com.spacecar.imyself.app-material-icons-extended-release-45 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\f40a42053a9ccd9d9715a535f6e500b6\transformed\material-icons-extended-release\res
+com.spacecar.imyself.app-lifecycle-viewmodel-2.7.0-46 C:\Users\amanm\.gradle\caches\9.0-milestone-1\transforms\f7a0140e1134464c3425465499b88408\transformed\lifecycle-viewmodel-2.7.0\res
+com.spacecar.imyself.app-resValues-47 D:\VS code\Control habit\app\build\generated\res\resValues\release
+com.spacecar.imyself.app-packageReleaseResources-48 D:\VS code\Control habit\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.spacecar.imyself.app-packageReleaseResources-49 D:\VS code\Control habit\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.spacecar.imyself.app-merged_res-50 D:\VS code\Control habit\app\build\intermediates\merged_res\release
+com.spacecar.imyself.app-main-51 D:\VS code\Control habit\app\src\main\res
+com.spacecar.imyself.app-release-52 D:\VS code\Control habit\app\src\release\res

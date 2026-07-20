@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="16"
+            column="13"
+            startOffset="590"
+            endLine="16"
+            endColumn="45"
+            endOffset="622"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="14"
+            column="9"
+            startOffset="285"
+            endLine="14"
+            endColumn="23"
+            endOffset="299"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.android.tools:desugar_jdk_libs than 2.0.4 is available: 2.1.5">
+        <fix-replace
+            description="Change to 2.1.5"
+            family="Update versions"
+            oldString="2.0.4"
+            replacement="2.1.5"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="54"
+            column="28"
+            startOffset="1178"
+            endLine="54"
+            endColumn="68"
+            endOffset="1218"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.19.0">
+        <fix-replace
+            description="Change to 1.19.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.19.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="55"
+            column="21"
+            startOffset="1241"
+            endLine="55"
+            endColumn="50"
+            endOffset="1270"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.7.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.11.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="56"
+            column="21"
+            startOffset="1293"
+            endLine="56"
+            endColumn="67"
+            endOffset="1339"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.8.2 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.8.2"
+            replacement="1.13.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="57"
+            column="21"
+            startOffset="1362"
+            endLine="57"
+            endColumn="61"
+            endOffset="1402"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.7.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.11.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="63"
+            column="21"
+            startOffset="1716"
+            endLine="63"
+            endColumn="73"
+            endOffset="1768"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-compose than 2.7.6 is available: 2.9.8">
+        <fix-replace
+            description="Change to 2.9.8"
+            family="Update versions"
+            oldString="2.7.6"
+            replacement="2.9.8"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="64"
+            column="21"
+            startOffset="1791"
+            endLine="64"
+            endColumn="65"
+            endOffset="1835"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.4">
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="68"
+            column="20"
+            startOffset="1964"
+            endLine="68"
+            endColumn="61"
+            endOffset="2005"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.4">
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="69"
+            column="20"
+            startOffset="2026"
+            endLine="69"
+            endColumn="57"
+            endOffset="2063"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.4">
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="70"
+            column="9"
+            startOffset="2073"
+            endLine="70"
+            endColumn="51"
+            endOffset="2115"/>
+    </incident>
+
+</incidents>
