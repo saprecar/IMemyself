@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.MenuBook
 import androidx.compose.material.icons.filled.Schedule
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -51,7 +52,8 @@ fun CalendarScreen(
     onThemeToggle: () -> Unit,
     onOpenRuleBook: () -> Unit,
     onOpenLogs: () -> Unit,
-    onOpenReport: () -> Unit
+    onOpenReport: () -> Unit,
+    onOpenAbout: () -> Unit
 ) {
     val logs by viewModel.logs.collectAsState()
     val activeMilestone by viewModel.activeMilestone.collectAsState()
@@ -104,6 +106,9 @@ fun CalendarScreen(
                     }
                     IconButton(onClick = onOpenRuleBook) {
                         Icon(Icons.Default.Info, contentDescription = "Rule Book")
+                    }
+                    IconButton(onClick = onOpenAbout) {
+                        Icon(Icons.Default.Settings, contentDescription = "About & Legal")
                     }
                     IconButton(onClick = onThemeToggle) {
                         Icon(

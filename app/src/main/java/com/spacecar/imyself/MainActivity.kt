@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.spacecar.imyself.ui.AboutScreen
 import com.spacecar.imyself.ui.CalendarScreen
 import com.spacecar.imyself.ui.DisclaimerScreen
 import com.spacecar.imyself.ui.PersonalLogScreen
@@ -64,7 +65,8 @@ class MainActivity : ComponentActivity() {
                                 onThemeToggle = toggleTheme,
                                 onOpenRuleBook = { navController.navigate("rulebook") },
                                 onOpenLogs = { navController.navigate("personallogs") },
-                                onOpenReport = { navController.navigate("report") }
+                                onOpenReport = { navController.navigate("report") },
+                                onOpenAbout = { navController.navigate("about") }
                             )
                         }
                         composable("rulebook") {
@@ -81,6 +83,9 @@ class MainActivity : ComponentActivity() {
                                 viewModel = trackingViewModel,
                                 onBack = { navController.popBackStack() }
                             )
+                        }
+                        composable("about") {
+                            AboutScreen(onBack = { navController.popBackStack() })
                         }
                     }
                 }

@@ -7,6 +7,30 @@
                     boolean="true"/>
             </map>
     </map>
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.intent.action.VIEW (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/spacecar/imyself/ui/AboutScreen.kt"
+                            line="25"
+                            column="22"
+                            startOffset="858"
+                            endLine="25"
+                            endColumn="64"
+                            endOffset="900"/>
+                    </map>
+                    <map id="android.intent.action.SENDTO (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/spacecar/imyself/ui/AboutScreen.kt"
+                            line="90"
+                            column="34"
+                            startOffset="3683"
+                            endLine="90"
+                            endColumn="105"
+                            endOffset="3754"/>
+                    </map>
+            </map>
+    </map>
     <map id="UnusedResources">
         <entry
             name="model"
