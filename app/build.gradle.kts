@@ -6,14 +6,14 @@ plugins {
 
 android {
     namespace = "com.spacecar.imyself"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.spacecar.imyself"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 36
+        versionCode = 3
+        versionName = "1.2"
 
         vectorDrawables {
             useSupportLibrary = true
