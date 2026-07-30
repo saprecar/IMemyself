@@ -43,3 +43,13 @@ This application is an independent habit-tracking and self-monitoring tool desig
 8. **Acceptance of Terms**
 
    * By downloading, installing, accessing, or using this application, the user acknowledges that they have read, understood, and agreed to this disclaimer.
+  
+9. Age Restriction
+
+This application is intended only for individuals who have reached the age of majority or legal adulthood in their jurisdiction.
+Persons under 18 years of age, or below the minimum legal age required to use such applications in their country, state, or region, should not use, access, download, register for, or interact with this application.
+By using this application, you represent and warrant that you have reached the applicable legal age in your jurisdiction and have the legal capacity to accept these terms and disclaimers.
+The developer does not knowingly collect information from minors and assumes no responsibility for use of the application by individuals who have not reached the applicable legal age.
+If it is discovered that a user does not meet the applicable age requirements, access to the application may be restricted or terminated without notice.
+
+Contact: getspacecar@gmail.com
