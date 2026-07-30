@@ -34,3 +34,5 @@ This application is strictly for users who are **18 years of age or older**, or 
 If any payments, subscriptions, or donations are introduced or made, they are bound by a strict **NO REFUND** policy under any circumstances.
 
 By continuing to use this software, you signify your absolute acceptance of these terms.
+
+Contact:getspacecar@gmail.com
